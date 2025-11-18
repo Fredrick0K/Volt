@@ -1,0 +1,1 @@
+Main odoo class
