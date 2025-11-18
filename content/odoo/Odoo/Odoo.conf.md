@@ -1,4 +1,4 @@
-This file contains all the necesary data so [[Odoo]] can load properly. Data such as:
+This file contains all the necesary data so [[odoo/Odoo/Odoo]] can load properly. Data such as:
 - DB name
 - DB password
 - DB path
@@ -7,5 +7,5 @@ This file contains all the necesary data so [[Odoo]] can load properly. Data suc
 - Master user password
 etc...
 
-All this can be modified. If this file is modified, [[Odoo]] service must be reinitialized.
+All this can be modified. If this file is modified, [[odoo/Odoo/Odoo]] service must be reinitialized.
 

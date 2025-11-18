@@ -1,6 +1,10 @@
 ---
-title: Welcome to Quartz
+title: Welcome G
 ---
+See: 
+Odoo stuff -> [[Odoo|Odoo]]
+Java stuff ___-->___ [[Hibernate|Java]]
+PSP stuf ___-->___ [[Binary Flow | PSP]]
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+
+
