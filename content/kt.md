@@ -1,1 +1,0 @@
-for variables, VAL to variable that thay arent gonna change , thay aint gonna be reassigned , and VAR to normal shi variables

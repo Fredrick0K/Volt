@@ -1,4 +1,4 @@
-in order to extract values from a JSON file using a key, the folowing: 
+[[odoo/Odoo|Odoo]] Databases uses JSON Files, in order to extract values from a JSON file using a key, the folowing: 
 SELECT {REG}->> {'KEY'}
 	FROM {TABLE}
 
