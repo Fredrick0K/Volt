@@ -1,22 +1,30 @@
 [[QWEB| Codigo QWEB]]
 
-## Tree tree>
+## Tree 
+````
+<tree>
     <field name="x_codigo_libro"/>
     <field name="x_codigo_autor"/>
     <field name="x_name"/>
     <field name="x_anyo_edicion" optional="hide"/>
-    <field name="x_numero_paginas" optional="show"/> </tree>
-## Form form>
+    <field name="x_numero_paginas" optional="show"/> 
+</tree>
+````
+## Form 
+````
+<form>
     <group>
         <field name="x_codigo_libro"/>
         <field name="x_codigo_autor"/>
         <field name="x_name"/>
         <field name="x_anyo_edicion"/>
         <field name="x_numero_paginas"/>
-    </group> </form>
+    </group> 
+</form>
+````
 
 ## Custom Addons Models: 
-
+````
 from odoo import models, fields, api
 class ies(models.Model):
      _name = 'ies.curso'
@@ -40,4 +48,5 @@ class ies(models.Model):
      cargo = fields.Selection(
                [('01', 'Jefe de estudios'), ('02', 'Direccion'), ('03', 'Profesor titular')],
                default='03',
-               String="Cargo docente")
+               String="Cargo docente")   
+````
