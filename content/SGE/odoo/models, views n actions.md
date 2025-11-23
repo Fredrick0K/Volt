@@ -1,4 +1,4 @@
-Following the [[DBModel.canvas|DBModel]] structure, we create a [[Model]], in this day, 'alumno', 'curso', 'asignatura'. All with em form and tree views,
+In [[Odoo|Odoo]] Following the [[DBModel.canvas|DBModel]] structure, we create a [[Model]], in this day, 'alumno', 'curso', 'asignatura'. All with em form and tree views,
 So, now we create an 'View Action - Accion de Ventana'. lookin good
 
 ![[Pasted image 20251020200644.png]]![[Pasted image 20251020200806.png]]
