@@ -1,6 +1,6 @@
 In [[Odoo|Odoo]] we can create customs [[Model|Models]] for our custom [[Addons]]. So in order to create a new model we need to navegate to the [[Addons|Custom addon]] following this route: Odoo 17.0 > server > odoo > customAddons > {Your [[Model]]} > models > models.py
 This file contains all the models that this addons have associated to, so if i wanna create a new model, i need to modify this file. 
-This file contains all we need to create the [[Model|models]] for our addon. ![[models.py]]The code is also [[Code|Here!]]
+This file contains all we need to create the [[Model|models]] for our addon. ![[models.py]]The code is also [[SGE/odoo/Code|Here!]]
 
 We have 2 classes called the same "ies", but they are different, the first one creates a model called "ies.curso" which "ies" is the model and "curso" is the model's name.
 The second class is called "ies.profesores", "ies" is the model and "profesores" is the model's name.
@@ -26,7 +26,7 @@ To see if we done things right, we need to check the Models in odoo.
 ![[Pasted image 20251123130418.png]]
 Here we see the modules that we created, i have more than 2 cuz i was testing. 
 
-Good, now its time to make the views, the code is [[Code|Here!]]
+Good, now its time to make the views, the code is [[SGE/odoo/Code|Here!]]
 Lets break down the code, we got:
 - The XML to create the ___Tree___ view of **Cursos**
 - The XML to create the ___Form___ view of **Cursos**
@@ -40,10 +40,10 @@ Lets break down the code, we got:
 	- Submenus that extends from the submenu "```{model_name}.menu_1```" with attributes like:
 		- "```<menuitem name="{name}" id="{model_name}.menu_1_list" parent="{model_name}.menu_1" action="{model_name}.curso_action_window"/>```"
 		- "```<menuitem name="{name}" id="{model_name}.menu_2_list" parent="{model_name}.menu_1" action="{model_name}.turbo_action_window"/>```"
-You can see my code is you have any doubts about it [[Code|here.]]
+You can see my code is you have any doubts about it [[SGE/odoo/Code|here.]]
 
-Now the most important thing, well they're all important but this one is important if we wanna see the menus, we need to go to security folder of our [[Addons|Custom Addon]] and modify the CSV file in order to create Permissions. 
-So [[Code|Here]] you have the CSV with permission created for both Models. The structure of the CSV is like the following:
+Now the most important thing, well they're all important but this one is important if we wanna see the menus, we need to go to security folder of our [[SGE/odoo/Odoo/Addons|Custom Addon]] and modify the CSV file in order to create Permissions. 
+So [[SGE/odoo/Code|Here]] you have the CSV with permission created for both Models. The structure of the CSV is like the following:
 
 <table class="obsidian-table">
     <thead>
