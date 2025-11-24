@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"a3776502ed64af06","type":"text","text":"### x_curso\n\n<ul>\n\t<li>x_id</li>\n\t<li>x_name</li>\n\t<li>x_fecha_ini</li>\n\t<li>x_fecha_fin</li>\n\t<li>x_id_asignaturas</li>\n<ul/>","x":-75,"y":40,"width":250,"height":220},
+		{"id":"1e82f69f0ff2f87d","type":"text","text":"### x_asignatura\n\n<ul>\n\t<li>x_id</li>\n\t<li>x_name</li>\n\t<li>x_id_curso</li>\n\t<li>x_ativo</li>\n<ul/>","x":280,"y":40,"width":250,"height":220},
+		{"id":"0591b2b53be17242","x":-440,"y":40,"width":250,"height":220,"type":"text","text":"### x_alumno\n\n<ul>\n\t<li>x_id</li>\n\t<li>x_name</li>\n\t<li>x_pais</li>\n\t<li>x_curso</li>\n\t<li>x_estudios</li>\n<ul/>"}
+	],
+	"edges":[
+		{"id":"52544fdfdc6970bd","fromNode":"0591b2b53be17242","fromSide":"right","toNode":"a3776502ed64af06","toSide":"left","label":"m2one"},
+		{"id":"d5cd2912142e3886","fromNode":"1e82f69f0ff2f87d","fromSide":"left","toNode":"a3776502ed64af06","toSide":"right","label":"m2m"}
+	]
+}

@@ -1,0 +1,1 @@
+In [[odoo/Odoo/Odoo]], in order to access edit mode, first select a view (tree. kanban..), then using the monkey extention shi, go to debug mode and "edit view"
