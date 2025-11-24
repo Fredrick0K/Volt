@@ -1,5 +1,5 @@
 
-## [[Odoo|SGE]]
+## [[Modules in Odoo|SGE]] 
 Here you will find SGE stuff such as:
 - Odoo
 ## [[Hibernate|Java]]
