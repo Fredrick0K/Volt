@@ -42,13 +42,17 @@ So, we need to fill:
 - **Driver Class**, here we don't need to type anything, we click on the three dots, in the left window we click on **browse from class** and select the driver.
 - **User ID**, here we need to specify the **user owner** of the database, in my case is __root__.
 ![[Pasted image 20251124181055.png]]
-if we have done things good as explained, in this window we need to specify the **username and password** of the database owner, then click on **test connection**
+if we have done things good as explained, in this window we need to specify the **username and password** of the database owner, then click on **test connection**.
+
 ![[Pasted image 20251124181759.png]]
 
+***SUCCESS!***
+![[Pasted image 20251124185512.png]]
+Now we click on **Finish**
+![[Pasted image 20251124185651.png]]
+ Click in **ok** and should be goo
 
-![[Pasted image 20251112170757.png]] 
 
-![[Pasted image 20251112170820.png]]
 
 ![[Pasted image 20251112172732.png]]
 ![[Pasted image 20251112172738.png]]
