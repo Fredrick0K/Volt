@@ -1,4 +1,4 @@
-In [[Odoo|Odoo]] Following the [[DBModel.canvas|DBModel]] structure, we create a [[Model]], in this day, 'alumno', 'curso', 'asignatura'. All with em form and tree views,
+Following the [[DBModel.canvas|DBModel]] structure, we create a [[Model]], in this day, 'alumno', 'curso', 'asignatura'. All with em form and tree views,
 So, now we create an 'View Action - Accion de Ventana'. lookin good
 
 ![[Pasted image 20251020200644.png]]![[Pasted image 20251020200806.png]]
@@ -6,7 +6,7 @@ So, now we create an 'View Action - Accion de Ventana'. lookin good
 Now, we create a 'Menu Element-Elemento del menu', and we create a 'Father Menu' called 'instituto', and then we create a Menu for each of the 3 things and then we give for each [[Model]] permissions, creating a new Permission with all RWCE (Read, Write, Create n Eliminate). FOR EACH [[Model]]  
 
 Now, we're goin to create a report, using "Informes" under "Formato en papel".
-So, first things first we create a new Informe "alumno.informe", with the the [[Code|QWEB]] code in "Arquitectura"
+So, first things first we create a new Informe "alumno.informe", with the the [[QWEB]] code in "Arquitectura"
 ![[Pasted image 20251027192338.png]]
 
 ![[Pasted image 20251027194051.png]] This image is the "Informe" view.
@@ -55,7 +55,7 @@ This is Autor:
 This is Libro: 
 ![[Pasted image 20251114152800.png]]
 
-Now if ya wanna create a Report, called Informe, and as we already coded the [[Code|QWEB]] view of Libro, lets dive into it. We create an External Identifier (Identificador Externo)
+Now if ya wanna create a Report, called Informe, and as we already coded the [[QWEB]] view of Libro, lets dive into it. We create an External Identifier (Identificador Externo)
 
 ![[Pasted image 20251114152935.png]]
 With this it will be done, we copied the ID of the QWEB view of Libro. So everything is setted up now.

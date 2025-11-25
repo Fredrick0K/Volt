@@ -22,7 +22,7 @@ In this window, we need to fill the following field:
 - **Name**: we need to give a name to our file
 - **Project**: this field will be filled automatically.
 - **Database**: We need to specify or create a new connection.
-- And finally ensure that the field **Configuration File** shows the path to the configuration file that we created before [[#First class|here.]
+- And finally ensure that the field **Configuration File** shows the path to the configuration file that we created before [[#First class|here.]]
 ![[Pasted image 20251124170639.png]]
 If we dont have a database connection configured, we create a new one, click on **New**
 This window will show up, select the **GENERIC JDBC** connector and down bellow name your connector as you like.
@@ -47,10 +47,13 @@ if we have done things good as explained, in this window we need to specify the 
 ![[Pasted image 20251124181759.png]]
 
 ***SUCCESS!***
+
 ![[Pasted image 20251124185512.png]]
 Now we click on **Finish**
+
 ![[Pasted image 20251124185651.png]]
- Click in **ok** and should be goo
+
+ Click in **ok** and should be good
 
 
 
