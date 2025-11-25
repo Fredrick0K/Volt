@@ -1,2 +1,2 @@
-In [[odoo/Odoo/Odoo|Odoo]], This shi lets us create our Menu. So, first we go to technic menu --> Elementos Menu --> Nuevo.
+In [[SGE/odoo/Odoo/Odoo|Odoo]], This shi lets us create our Menu. So, first we go to technic menu --> Elementos Menu --> Nuevo.
 Then you complete everything, name ...

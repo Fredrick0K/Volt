@@ -1,1 +1,1 @@
-Its an unextentiolized file, that in the past, it was the executable file that initialized Odoo. Now in newer versions, this file was refactored to Odoo-bin and it contains the instructions to execute Odoo in Command Line
+Its a no-extension file that in the past, it was the executable file that initialized Odoo. Now in newer versions, this file was refactored to Odoo-bin and it contains the instructions to execute Odoo in Command Line.
