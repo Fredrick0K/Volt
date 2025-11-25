@@ -1,8 +1,8 @@
 
 ERP -> Enterprise Resource Planning
 - Modular
-- Designed to enhace and fastening workflows
-- Easy comunication with Customers or Proveders
+- Designed to enhance and fastening workflows
+- Easy communication with Customers or Providers
 Cons:
 - Costs.
 - Employees capacity to manage Software and work w it
@@ -12,7 +12,6 @@ Types:
 - Horizontal: Made to work for bigger variety of sectors
 - Under License: (Paid)
 - Pay On Demand.
-
 
 ## First Finance Apps in History
 

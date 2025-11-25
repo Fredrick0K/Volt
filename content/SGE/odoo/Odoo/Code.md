@@ -1,3 +1,4 @@
+All code used in [[Odoo]] is here!
 # QWEB
 ```
 <t t-name="informe_alumno">
