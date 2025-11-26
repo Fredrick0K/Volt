@@ -1,3 +1,9 @@
+***Index:***
+- [[#Custom Models| Models]]
+- [[#Custom Views| Views]]
+- [[#Custom Demo Data| Demo Data]]
+
+## Custom Models
 In [[Odoo|Odoo]] we can create customs [[Model|Models]] for our custom [[Addons]]. So in order to create a new model we need to navegate to the [[Addons|Custom addon]] following this route: Odoo 17.0 > server > odoo > customAddons > {Your [[Model]]} > models > models.py
 This file contains all the models that this addons have associated to, so if i wanna create a new model, i need to modify this file. 
 This file contains all we need to create the [[Model|models]] for our addon. ![[models.py]]The code is also [[SGE/odoo/Code|Here!]]
@@ -26,6 +32,7 @@ To see if we done things right, we need to check the Models in odoo.
 ![[Pasted image 20251123130418.png]]
 Here we see the modules that we created, i have more than 2 cuz i was testing. 
 
+## Custom Views
 Good, now its time to make the views, the code is [[SGE/odoo/Code|Here!]]
 Lets break down the code, we got:
 - The XML to create the ___Tree___ view of **Cursos**
@@ -82,5 +89,8 @@ So [[SGE/odoo/Code|Here]] you have the CSV with permission created for both Mode
     </tbody>
 </table>
 
-Here i've made a table to visualize it better.
+Here I've made a table to visualize it better.
+
+## Custom Demo Data
+
 

@@ -1,4 +1,17 @@
-# QWEB
+***Index:***
+- [[#QWEB| QWEB ]]
+- [[#Tree| Tree View]]
+- [[#Form|Form View]]
+- [[#Custom Addons Models|Custom Models]]
+- [[#Code Custom Views|Custom Views]]
+- [[#Security CSV|CSV]]
+- [[#Custom Demo Data|Demo Data]]
+
+This page holds all the code used in [[SGE/odoo/odoo/Odoo|Odoo]], if anyone wants the code.
+
+---
+
+#  QWEB
 ```
 <t t-name="informe_alumno">
     <div class="page">
@@ -21,8 +34,6 @@
         </table>
     </div>
 ```
-
-
 
 ```
 <t t-name="informe_libro">
@@ -55,7 +66,9 @@
     </t>
 ```
 
+___ 
 # Tree 
+
 ````
 <tree>
     <field name="x_codigo_libro"/>
@@ -65,7 +78,10 @@
     <field name="x_numero_paginas" optional="show"/> 
 </tree>
 ````
+
+___
 # Form 
+
 ````
 <form>
     <group>
@@ -78,7 +94,9 @@
 </form>
 ````
 
+___
 # Custom Addons Models: 
+
 ````
 from odoo import models, fields, api
 class ies(models.Model):
@@ -106,7 +124,8 @@ class ies(models.Model):
                String="Cargo docente")   
 ````
 
-# Code Views
+___
+# Code Custom Views
 
 ```
 <odoo>
@@ -233,6 +252,7 @@ class ies(models.Model):
 </odoo>
 ```
 
+___
 # Security CSV
 
 ```
@@ -240,3 +260,94 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 perm,Permissions,model_xwd_curso,,1,1,1,1
 permTurbo,TPermissions,model_xwd_turbo,,1,1,1,1
 ```
+
+___
+# Custom Demo Data
+
+```
+
+<odoo>
+  <data>
+    <!-- Demo Data Load For Alumno-->
+    <record id="alumno_1" model="xwd.alumnado">
+      <field name="name">Eva</field>
+      <field name="apellido">Torres Herrero</field>
+      <field name="direccion">C San Martin</field>
+    </record>
+  
+    <record id="alumno_2" model="xwd.alumnado">
+      <field name="name">Alexander</field>
+      <field name="apellido">Scjundiel</field>
+      <field name="direccion">Avd Madrid</field>
+   </record>
+  
+
+   <record id="alumno_3" model="xwd.alumnado">
+      <field name="name">Marco</field>
+      <field name="apellido">Hernandez Polo</field>
+      <field name="direccion">Plaza Roma</field>
+    </record>
+  
+    <!-- Demo Data Load For Turbo-->
+  
+    <record id="turbo_1" model="xwd.turbo">
+      <field name="name">Javier Gallo</field>
+      <field name="activo">true</field>
+      <field name="alumno">20</field>
+      <field name="categoria">03</field>
+      <field name="owner"> Williams </field>
+    </record>
+  
+    <record id="turbo_2" model="xwd.turbo">
+      <field name="name">Rocio Gargallo </field>
+      <field name="activo">true</field>
+      <field name="alumno">10</field>
+      <field name="categoria">02</field>
+      <field name="owner">Richards</field>
+    </record>
+  
+    <record id="turbo_3" model="xwd.turbo">
+      <field name="name">Sergei Rotimerr</field>
+      <field name="activo">true</field>
+      <field name="alumno">14</field>
+      <field name="categoria">01</field>
+      <field name="owner">McLaren Willy</field>
+    </record>
+  
+    <!-- Demo Data Load For Curso-->
+  
+    <record id="curso_1" model="xwd.curso">
+      <field name="name">IT</field>
+      <field name="activo">true</field>
+      <field name="alumno">12</field>
+      <field name="categoria">02</field>
+      <field name="lengua" ref="base.lang_es"/>
+      <field name="profesor" ref="turbo_1"/>
+      <field name="alumno_cursos" eval="[(6, 0, [ref('alumno_3'), ref('alumno_2')] )]"/>
+    </record>
+  
+    <record id="curso_2" model="xwd.curso">
+      <field name="name">DAM</field>
+      <field name="activo">true</field>
+      <field name="alumno">30</field>
+      <field name="categoria">04</field>
+      <field name="lengua" ref="base.lang_es"/>
+      <field name="profesor" ref="turbo_2"/>
+      <field name="alumno_cursos" eval="[(6, 0, [ref('alumno_2'), ref('alumno_1')] )]"/>
+    </record>
+  
+    <record id="curso_3" model="xwd.curso">
+      <field name="name">Mecanica</field>
+      <field name="activo">true</field>
+      <field name="alumno">13</field>
+      <field name="categoria">01</field>
+      <field name="lengua" ref="base.lang_es"/>
+      <field name="profesor" ref="turbo_3"/>
+      <field name="alumno_cursos" eval="[(6, 0, [ref('alumno_1'), ref('alumno_2')] )]"/>
+
+    </record>
+  </data>
+</odoo>
+
+```
+

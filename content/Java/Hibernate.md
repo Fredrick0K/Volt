@@ -1,3 +1,8 @@
+> [!CAUTION] Before Starting with this process, ENSURE that anything was constructed by **Build Path**, check **Referenced libraries** and ENSURE that its empty or doesn't exist. Then you can proceed.
+
+> [!CAUTION] Check it twice, a single library added to the **Build Path** could brake you Hibernate Configuration. 
+---
+
 So, we got Hibernate installed in the eclipse IDE.
 In the following order, the classes need to be created:
 - [[#First class]] is the ***Hibernate Config File***
@@ -7,8 +12,10 @@ In the following order, the classes need to be created:
 
 # First class
 Now's configuration time. First, on our Java Project we create a new Hibernate Configuration File, the following UI will be displayed![[Pasted image 20251111201755.png]]
+
 Here we define where the cfg File is gonna be located at. Am gonna save it in **"U3_Hibernate_MySQL" --> src**
 ![[Pasted image 20251111202914.png]]
+
 In here we fill up this camps:
 - **Session factory name** -> Any name you want
 - **Database dialect** -> MySQL
