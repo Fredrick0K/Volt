@@ -2,7 +2,7 @@ So, we got Hibernate installed in the eclipse IDE.
 In the following order, the classes need to be created:
 - [[#First class]] is the ***Hibernate Config File***
 - [[#Second class]] is the ***Console Configuration***
-- Third one is the Reverse Engineering File
+- [[#Third Class|Third]] one is the ***Reverse Engineering File***
 - And finally the forth one, the ***Hibernate Code generation Configuration***
 
 # First class
@@ -12,7 +12,7 @@ Here we define where the cfg File is gonna be located at. Am gonna save it in **
 In here we fill up this camps:
 - **Session factory name** -> Any name you want
 - **Database dialect** -> MySQL
-- **Driver Class** -> the driver's class name "com.mysql...."
+- **Driver Class** -> the driver's class name "com.mysql....".  **IMPORTANT** you need to modify the driver class by adding this 2: ***cj***, should be looking like this: **com.mysql.cj.jdbc.Driver**
 - **Connection URL** -> jdbc:mysql://localhost/<**YourDB**/>
 - **Username** -> **root**
 - **Password** -> **root**
@@ -50,11 +50,18 @@ if we have done things good as explained, in this window we need to specify the 
 
 ![[Pasted image 20251124185512.png]]
 
-Now we click on **Finish**
+Now we click on **Finish**.
 
 ![[Pasted image 20251124185651.png]]
 
- Click in **ok** and should be good
+ Click in **ok** and should be good,
+
+# Third Class 
+The third class is the reverse engineering, this file is the one that is gonna hold all the tables of our database. 
+Here we specify the path where the **.xml** file is gonna be located and name the fild, in my case i leave the name as it is.
+![[Pasted image 20251125200332.png]]
+
+
 
 
 
