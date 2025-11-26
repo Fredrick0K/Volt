@@ -79,10 +79,13 @@ This window will pop up, click on **use existing**, then
 ![[Pasted image 20251126120200.png]]
 browse to the file location and select it, then clock **ok**.
 ![[Pasted image 20251126120251.png]]
-Good, we are at one small thing to finish the process, we go to the **Exporters** tab
-
+Good, we are at one small thing to finish the process, we go to the **Exporters** tab and we select the following things:
+- **Java 5 Syntax**
+- **Domain Code**
+- **Hibernate XML Mapping**
+- **Hibernate XML Configuration**
 ![[Pasted image 20251112172738.png]]
-This ui is about setting the path where the fille is gonna be saved. The file name will be UNTOUCHED, we wont be messing around with some intern shi and break up everythang.
-When we have choosed the save path of the cfg file, and after hitting Next.
+
+Aight! Everything now is done! 
 
  

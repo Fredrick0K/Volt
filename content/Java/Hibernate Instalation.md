@@ -31,6 +31,8 @@ Once eclipse finishes the install, he asks us to restart the IDE. Click **Restar
 ![[Pasted image 20251126142212.png]]
 
 ### Hooray!
-When eclipse starts it will asks us if we want to send **Diagnostic Data**, i usually say ***No*** 
+
+When eclipse starts it will asks us if we want to send **Diagnostic Data**, i usually say ***No***.
 ![[Pasted image 20251126142455.png]]
 
+ And that's it lads!
