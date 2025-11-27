@@ -19,7 +19,10 @@ Here we define where the cfg File is gonna be located at. Am gonna save it in **
 In here we fill up this camps:
 - **Session factory name** -> Any name you want
 - **Database dialect** -> MySQL
-- **Driver Class** -> the driver's class name "com.mysql....".  **IMPORTANT** you need to modify the driver class by adding this 2: ***cj***, should be looking like this: **com.mysql.cj.jdbc.Driver**
+- **Driver Class** -> the driver's class name "com.mysql....". 
+
+>[!CAUTION]  **IMPORTANT** you need to modify the driver class by adding this 2: ***cj***, should be looking like this: **com.mysql.cj.jdbc.Driver**
+
 - **Connection URL** -> jdbc:mysql://localhost/<**YourDB**/>
 - **Username** -> **root**
 - **Password** -> **root**
@@ -95,4 +98,15 @@ Good, we are at one small thing to finish the process, we go to the **Exporters*
 
 Aight! Everything now is done! 
 
- 
+In Hibernate we have 2 ways of accessing or doing a query:
+- ## API JPA: 
+	- This api is also called Jakarta.
+- ## API Hibernate:
+	- This api, which we are gonna use, is straight from **org.hibernate**.
+
+ To find object by primary key or save a new object in the DB: 
+ - Session ¬
+		**find()**
+		**persist()**
+
+	
