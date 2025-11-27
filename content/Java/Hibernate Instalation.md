@@ -22,6 +22,9 @@ Here we need to accept the terms and agreements, then click on **Finish**
 ![[Pasted image 20251126141637.png]]
 
 Now this window will pop up, here we need to check both Authors "**https://download.jboss.org**" and "**https://testng.org**" and then click down below **Trust Selected**.
+
+>[!IMPORTANT] Make sure you select all Authors, else, you cant continue with the installation 
+
 ![[Pasted image 20251126141738.png]]
 
 And once again we to trust "**Unsigned**", then click **Trust Selected**.
@@ -30,9 +33,9 @@ And once again we to trust "**Unsigned**", then click **Trust Selected**.
 Once eclipse finishes the install, he asks us to restart the IDE. Click **Restart Now**.
 ![[Pasted image 20251126142212.png]]
 
-### Hooray!
+>[!TIP] Yessir installation finished!
 
 When eclipse starts it will asks us if we want to send **Diagnostic Data**, i usually say ***No***.
 ![[Pasted image 20251126142455.png]]
 
- And that's it lads!
+ That's all lads!
