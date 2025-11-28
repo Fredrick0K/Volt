@@ -1,3 +1,4 @@
+In [[SGE]] we use a bunch of important domains. Broke down as following:
 
 ERP -> Enterprise Resource Planning
 - Modular

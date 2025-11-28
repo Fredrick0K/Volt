@@ -1,1 +1,0 @@
-**Hibernate Query Language**, aka **HQL**, is the
