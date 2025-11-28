@@ -1,6 +1,7 @@
 > [!CAUTION] Before Starting with this process, ENSURE that anything was constructed by **Build Path**, check **Referenced libraries** and ENSURE that its empty or doesn't exist. Then you can proceed.
 
 > [!CAUTION] Check it twice, a single library added to the **Build Path** could brake you Hibernate Configuration. 
+
 ---
 
 So, we got Hibernate installed in the eclipse IDE.
@@ -34,17 +35,22 @@ In this window, we need to fill the following field:
 - **Database**: We need to specify or create a new connection.
 - And finally ensure that the field **Configuration File** shows the path to the configuration file that we created before [[#First class|here.]]
 ![[Pasted image 20251124170639.png]]
-If we dont have a database connection configured, we create a new one, click on **New**
+
+If we don't have a **database connection** configured, we create a new one, click on **New**
 This window will show up, select the **GENERIC JDBC** connector and down bellow name your connector as you like.
 ![[Pasted image 20251124171256.png]]
+
 Now ___SPECIAL ATENTION___ this step is one of the most important ones, follow up as close as you can.
 After giving the connector a name, and clicking on **Next**, this window show up, here we configure the connector, username, password and everything ***Hibernate*** needs to work.
 First click on that icon called ***new driver definition***, it is also underlined in green
 ![[Pasted image 20251124171903.png]]
+
 This window will appear, here we need to select the **Generic JDBC Driver** and we name it as we like. Next we move to the tab **JAR List**  
 ![[Pasted image 20251124172245.png]]
+
 In this tab we will select the ```.jar``` file of the connector of the database. In this screenshot its shows better with colors.
 ![[Pasted image 20251124172841.png]]
+
 Next up, is heading to **Properties tab**, beside **JAR List**, and here we need to fill the 4 fields, all of them.
 So, we need to fill:
 - **Connection URL**, which is --> **jdbc:mysql://localhost**.
@@ -52,6 +58,7 @@ So, we need to fill:
 - **Driver Class**, here we don't need to type anything, we click on the three dots, in the left window we click on **browse from class** and select the driver.
 - **User ID**, here we need to specify the **user owner** of the database, in my case is __root__.
 ![[Pasted image 20251124181055.png]]
+
 if we have done things good as explained, in this window we need to specify the **username and password** of the database owner, then click on **test connection**.
 
 ![[Pasted image 20251124181759.png]]
