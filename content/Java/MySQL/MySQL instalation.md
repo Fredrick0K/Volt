@@ -1,6 +1,7 @@
 Whats good, wanna install MySQL? Gotcha, here am gonna break it down for you.
 
 ___
+In our [[MySQL]] programs that need a DB manager, for this time we gonna use MySQL.
 First, we are going to head to MySQL page to download the installer.
 We head to MySQL page, [here](https://www.mysql.com/), and we go to the ***Download*** section
 ![[Pasted image 20251130215202.png]]
