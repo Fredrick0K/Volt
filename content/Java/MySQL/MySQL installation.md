@@ -1,4 +1,4 @@
-Whats good, wanna install MySQL? Gotcha, here am gonna break it down for you.
+What's good, wanna install [[MySQL]]? Gotcha, here am gonna break it down for you.
 
 ___
 First, we are going to head to MySQL page to download the installer.
