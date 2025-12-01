@@ -4,7 +4,7 @@ ___
 In our [[MySQL]] programs that need a DB manager, for this time we gonna use MySQL.
 First, we are going to head to MySQL page to download the installer.
 We head to MySQL page, [here](https://www.mysql.com/), and we go to the ***Download*** section
-![[Pasted image 20251130215202.png]]
+![[images/Pasted image 20251130215202.png]]
 
 Then we scroll down all the way down searching for this link: **MySQL Community (GPL) Downloads**, click on it and it will take you to the downloads page.
 ![[Pasted image 20251130215322.png]]
