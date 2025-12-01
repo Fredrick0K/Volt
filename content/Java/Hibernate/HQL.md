@@ -13,7 +13,15 @@ As you can see, in **SQL** we can use the asterisk to retrieve all the fields of
 Hibernate has its own packages and a list of dependencies needed so it can run correctly. The following ``.rar file`` has all the necessary libraries and dependencies needed: 
 ![[lib_hibernate_7.1.rar]] 
 
-Hibernate includes its own classes used to make the **CRUD[^1]** queries.
+Hibernate includes its own classes used to make the **CRUD[^1]** queries, such as: 
+ - TypeQuery<{Object}>
+ - Query<{Object}>
+ - SelectionQuery<{Object}>
+ - MutationQuery
+We are going to focus on 2 of these, **SelectionQuery** and **MutationQuery**.
+These 2 are quite comprehensible by just their name, **SelectionQuery** is used when we wanna get information from the DB, like **SELECT** queries, by the other hand, **MutationQuery** is used when we wanna make changes in the DB, like **UPDATES**, **DELETE**, **INSERT** queries.
+
+**SelectionQuery** works by re
 
 
 
