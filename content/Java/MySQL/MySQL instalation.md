@@ -1,10 +1,9 @@
 Whats good, wanna install MySQL? Gotcha, here am gonna break it down for you.
 
 ___
-In our [[MySQL]] programs that need a DB manager, for this time we gonna use MySQL.
 First, we are going to head to MySQL page to download the installer.
 We head to MySQL page, [here](https://www.mysql.com/), and we go to the ***Download*** section
-![[images/Pasted image 20251130215202.png]]
+![[Pasted image 20251130215202.png]]
 
 Then we scroll down all the way down searching for this link: **MySQL Community (GPL) Downloads**, click on it and it will take you to the downloads page.
 ![[Pasted image 20251130215322.png]]
@@ -70,12 +69,11 @@ Next up, the program must aply configuration. Hit **Execute** then **Finish**.
 Again **Next** and **Finish**. 
 ![[Pasted image 20251130225323.png]]
 
->[!Success] **Hooray!!**
+>[!Success] **Yessir!!**
 >Installation's over!
 
 Now if you search for MySQL in your windows apps, you will see MySQL folder, that's great sign!
 ![[Pasted image 20251130225619.png]]
 
 ___
-[^1]: For MacOS: [here!](https://www.geeksforgeeks.org/installation-guide/how-to-install-mysql-on-macos/)
-For Linux: [here!](https://www.geeksforgeeks.org/installation-guide/how-to-install-mysql-on-linux/)
+[^1]: For MacOS: [here!](https://www.geeksforgeeks.org/installation-guide/how-to-install-mysql-on-macos/), for Linux: [here!](https://www.geeksforgeeks.org/installation-guide/how-to-install-mysql-on-linux/)
