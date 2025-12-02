@@ -1,12 +1,12 @@
-# Quartz v4
+### Vault repo.
 Made by Quartz
 <p>
   <a href ="">
     <img src="quartz/static/icon.png"/>
   </a>
 </p>
-<!--<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
+<p align="center">
+  <a href="">
+    <img src="quartz/static/icon.png" />
   </a>
-</p>->
+</p>
