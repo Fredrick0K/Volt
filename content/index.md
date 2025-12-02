@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="">
+    <img src="quartz/static/icon.png" />
+  </a>
+</p>
 
 ## [[Custom Modules|SGE]] 
 Here you will find SGE stuff such as:
