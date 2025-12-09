@@ -18,6 +18,7 @@ Hibernate includes its own classes used to make the **CRUD[^1]** queries, such a
  - **Query<{*Object*}>**
  - **SelectionQuery<{*Object*}>**
  - **MutationQuery**
+ 
 We are going to focus on 2 of these, **SelectionQuery** and **MutationQuery**.
 These 2 are quite comprehensible by just their name, **SelectionQuery** is used when we wanna get information from the DB, like **SELECT** queries, by the other hand, **MutationQuery** is used when we wanna make changes in the DB, like **UPDATES**, **DELETE**, **INSERT** queries.
 
