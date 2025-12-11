@@ -1,15 +1,16 @@
 > [!danger] Before Starting with this process, ENSURE that anything was constructed by **Build Path**, check **Referenced libraries** and ENSURE that its empty or doesn't exist. Then you can proceed.
 
-> [!CAUTION] Check it twice, a single library added to the **Build Path** could brake you Hibernate Configuration. 
+> [!CAUTION] Check it twice, a single library added to the **Build Path** could brake your Hibernate Configuration process.  
 
 ---
 
 So, we got Hibernate installed in the eclipse IDE.
 In the following order, the classes need to be created:
-- [[#First class]] is the ***Hibernate Config File***
-- [[#Second class]] is the ***Console Configuration***
-- [[#Third Class|Third]] one is the ***Reverse Engineering File***
-- And finally the forth one, the ***Hibernate Code generation Configuration***
+
+- [[#First class]] is the ***Hibernate Config File***.
+- [[#Second class]] is the ***Console Configuration***.
+- [[#Third Class|Third]] one is the ***Reverse Engineering File***.
+- And finally the [[#Fourth Class|forth]] one, the ***Hibernate Code generation Configuration***.
 
 # First class
 Now's configuration time. First, on our Java Project we create a new Hibernate Configuration File, the following UI will be displayed![[Pasted image 20251111201755.png]]
@@ -63,26 +64,28 @@ if we have done things good as explained, in this window we need to specify the 
 
 ![[Pasted image 20251124181759.png]]
 
+![[Pasted image 20251124185512.png]]
+
 >[!success] ***SUCCESS!***
 
-![[Pasted image 20251124185512.png]]
 
 >[!info] If you got any errors while testing connection, check your connector, driver, driver class and ensure everything is ok.
 
 Now we click on **Finish**.
-
 ![[Pasted image 20251124185651.png]]
 
  Click in **ok**  while selecting the second one, by default it came selected. Now we good.
 
 # Third Class 
+
 The third class is the reverse engineering, this file is the one that is gonna hold all the tables of our database. 
 Here we specify the path where the **.xml** file is gonna be located and name the file, in my case i leave the name as it is. The file should be in **src** folder.
 ![[Pasted image 20251125200332.png]]
 Now we need to specify the **configuration file**, then click on **refresh** (White arrow), and then we will see all the **schemas** that our database has. We select our schema and then we include every single field of our schema. Like this:
 ![[Pasted image 20251126114515.png]]
-Then click on **finish** and the xml file should display automatically proving we are on the good path.
+Then click on **finish** and the xml file should display automatically proving we are on the good path. 
 
+# Fourth Class
 Alright, final step, the **Code Generation**. This step will generate all the classes and the mapping relations between the classes and the tables of the DB. This step is where everything we did previously will be used and tested, if we did all the step good, this step should be the easiest one of 'em all.
 In the tools bar of _Eclipse_, search for the ***Hibernate Run Button*** the one marked in the picture, click on the tiny black arrow the one marked by the White arrow in order to deploy the options menu, the we select ***Hibernate Code Generation Configuration***.
 ![[Pasted image 20251126115058.png]]
@@ -107,15 +110,3 @@ Good, we are at one small thing to finish the process, we go to the **Exporters*
 
 Aight! Everything now is done! 
 
-In Hibernate we have 2 ways of accessing or doing a query:
-- ## API JPA: 
-	- This api is also called Jakarta.
-- ## API Hibernate:
-	- This api, which we are gonna use, is straight from **org.hibernate**.
-
- To find object by primary key or save a new object in the DB: 
- - Session ¬
-		**find()**
-		**persist()**
-
-	

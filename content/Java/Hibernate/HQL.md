@@ -24,17 +24,22 @@ These 2 are quite comprehensible by just their name, **SelectionQuery** is used 
 
 **SelectionQuery** works by retrieving information  and instancing and object of the given type. If the query returns just one result, like searching by id, its quite simple and you need to instance just one object and then write it on screen with the **toString()**. But, if the query returns more than 1, like for example, retrieving the movies that are ranked between a given number of stars, in this case we will use **List<>** to save em all in one list and read it after.
 
+Join Types used in Hibernate: 
+There are  2 types, **Implicit JOIN** and **Explicit JOIN**. The implicit Join uses *dot* ``.`` to navigate through the classes to the destiny, explicit join uses the ``JOIN`` word to navigate through tables and classes. Here are some examples:
+
+ - Implicit example: ``` SELECT FROM Libro l WHERE l.escritor.nombre LIKE '{value}' ```. We are retrieving the fields of the reg **Libro** that has an author name that matches with the parameter.
+- Explicit example: ``SELECT l FROM Libro l JOIN l.escritor e WHERE e.nombre LIKE '{value}' ``. Here same thing but with the well know Join statement.
 
 
 
 
 
 
+>[!Important] If your program does multiple queries to the DB, the **Session** need to be closed ones the program finishes.
 
 
 
-
-
+1, 3, 4
 
 
 

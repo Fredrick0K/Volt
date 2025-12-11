@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"a54372409623379b","type":"text","text":"Venta","x":40,"y":-40,"width":250,"height":60},
+		{"id":"2d66c0f3bdd3add0","type":"text","text":"Cliente","x":-375,"y":20,"width":250,"height":60},
+		{"id":"fc0e811a75bebe6c","x":-375,"y":-100,"width":250,"height":60,"type":"text","text":"Turismo"}
+	],
+	"edges":[
+		{"id":"ae70f831c1735ab4","fromNode":"a54372409623379b","fromSide":"left","toNode":"fc0e811a75bebe6c","toSide":"right","fromEnd":"arrow","color":"5","label":"0:M"},
+		{"id":"288480e820cead58","fromNode":"a54372409623379b","fromSide":"left","toNode":"2d66c0f3bdd3add0","toSide":"right","fromEnd":"arrow","color":"5","label":"0:M"}
+	]
+}
