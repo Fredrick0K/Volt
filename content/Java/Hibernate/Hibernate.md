@@ -89,14 +89,17 @@ Then click on **finish** and the xml file should display automatically proving w
 Alright, final step, the **Code Generation**. This step will generate all the classes and the mapping relations between the classes and the tables of the DB. This step is where everything we did previously will be used and tested, if we did all the step good, this step should be the easiest one of 'em all.
 In the tools bar of _Eclipse_, search for the ***Hibernate Run Button*** the one marked in the picture, click on the tiny black arrow the one marked by the White arrow in order to deploy the options menu, the we select ***Hibernate Code Generation Configuration***.
 ![[Pasted image 20251126115058.png]]
+
 This window will pop up, here we create a ***new Launch Configuration*** by clicking in the icon marked by the Red Arrow. We fill up the followed fields:
 - Name: we name our file.
 - Console Configuration: We must specify the path where the configuration file is located.
 - Select the option ***Reverse engineering from JDBC Connection***.
 - Package: we name the package that hibernate will generate.
 - reveng.xml: specify the reverse engineering file that hibernate will use. In the next steps will break it down.
+
 ![[Pasted image 20251126115609.png]]
 Now, we click on **Setup_** to specify the ***reveng.xml*** file.
+
 This window will pop up, click on **use existing**, then
 ![[Pasted image 20251126120200.png]]
 browse to the file location and select it, then clock **ok**.
@@ -110,3 +113,4 @@ Good, we are at one small thing to finish the process, we go to the **Exporters*
 
 Aight! Everything now is done! 
 
+>[!Yes] Congrats!
