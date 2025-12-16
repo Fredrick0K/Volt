@@ -9,6 +9,7 @@
   & > .graph-outer {
     border-radius: 5px;
     border: 1px solid var(--lightgray);
+    border-color: #7b97aa;
     box-sizing: border-box;
     height: 250px;
     margin: 0.5em 0;
@@ -18,7 +19,7 @@
     & > .global-graph-icon {
       cursor: pointer;
       background: none;
-      border: none;
+      border: 1px solid #7b97aa;
       color: var(--dark);
       opacity: 0.5;
       width: 24px;
@@ -68,6 +69,7 @@
       @media all and not ($desktop) {
         width: 90%;
       }
+
     }
   }
 }

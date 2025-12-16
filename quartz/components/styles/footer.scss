@@ -1,7 +1,7 @@
 footer {
   text-align: left;
-  margin-bottom: 4rem;
-  opacity: 0.7;
+  margin-bottom: 2rem;
+  opacity: 0.75;
 
   & ul {
     list-style: none;
@@ -11,5 +11,14 @@ footer {
     flex-direction: row;
     gap: 1rem;
     margin-top: -1rem;
+    //change text size on hover and adding transiction between size change
+    li {
+      font-size: 0.875rem;
+      transition: font-size 0.3s ease;
+
+      &:hover {
+        font-size: 1rem;
+      }
+    }
   }
 }

@@ -8,14 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Valut Shi",
-    pageTitleSuffix: "",
+    pageTitle: "Class Things",
+    pageTitleSuffix: "Whats good twn",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
+    locale: "es-ES",
     baseUrl: "quartz.torq.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
@@ -23,9 +23,9 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
+        header: "Montserrat",
         body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        code: "Google Sans Code",
       },
       colors: {
         lightMode: {

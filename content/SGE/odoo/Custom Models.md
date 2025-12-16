@@ -11,8 +11,8 @@ This file contains all we need to create the [[Model|models]] for our addon. ![[
 We have 2 classes called the same "ies", but they are different, the first one creates a model called "ies.curso" which "ies" is the model and "curso" is the model's name.
 The second class is called "ies.profesores", "ies" is the model and "profesores" is the model's name.
 The attributes of both classes are nearly the same, we got:
-- ### _name :  this variable holds the name of the module, this name is **UNIQUE**
-- ### _description : this variable holds the description of the module, like information about the module.
+- #### _name :  this variable holds the name of the module, this name is **UNIQUE**
+- #### _description : this variable holds the description of the module, like information about the module.
 this 2 are a must to have in the code, or else, odoo can't build the module correctly or it will throw a big error._
 Now its time to code the fields, its simple, we create a variable with he name we want and then we initialize it like this: 
 - If its a String:  ```{field_Name} = fields.Char(String="Nombre del profesor", required=True, help="Introduce el nombre del curso", size=40)```
