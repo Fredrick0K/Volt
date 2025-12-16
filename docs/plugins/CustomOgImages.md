@@ -79,14 +79,11 @@ You can fully customize how the images being generated look by passing your own 
 You will also be passed an array containing a header and a body font (where the first entry is header and the second is body). The fonts matches the ones selected in `theme.typography.header` and `theme.typography.body` from `quartz.config.ts` and will be passed in the format required by [`satori`](https://github.com/vercel/satori). To use them in CSS, use the `.name` property (e.g. `fontFamily: fonts[1].name` to use the "body" font family).
 
 An example of a component using the header font could look like this:
-
-{% raw %}
 ```tsx title="socialImage.tsx"
 export const myImage: SocialImageOptions["imageStructure"] = (...) => {
   return <p style={{ fontFamily: fonts[0].name }}>Cool Header!</p>
 }
 ```
-{% endraw %}
 
 > [!example]- Local fonts
 >
@@ -150,8 +147,6 @@ This example will generate images that look as follows:
 | Light                                      | Dark                                      |
 | ------------------------------------------ | ----------------------------------------- |
 | ![[custom-social-image-preview-light.png]] | ![[custom-social-image-preview-dark.png]] |
-
-{% raw %}
 ```tsx
 import { SatoriOptions } from "satori/wasm"
 import { GlobalConfiguration } from "../cfg"
@@ -234,13 +229,11 @@ export const customImage: SocialImageOptions["imageStructure"] = (
   )
 }
 ```
-{% endraw %}
 
 ### Advanced Example
 
 The following example includes a customized social image with a custom background and formatted date:
 
-{% raw %}
 ```typescript title="custom-og.tsx"
 
 export const og: SocialImageOptions["Component"] = (
@@ -364,7 +357,6 @@ export const og: SocialImageOptions["Component"] = (
   )
 }
 ```
-{% endraw %}
 
 ```js
 const style = { position: "relative", display: "flex", backgroundImage: `url("https://${cfg.baseUrl}/img.png")` };
