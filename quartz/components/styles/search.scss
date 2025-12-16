@@ -1,5 +1,37 @@
 @use "../../styles/variables.scss" as *;
 
+@keyframes search-dropin {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+  }
+  1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@keyframes search-dropout {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  99% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .search {
   min-width: fit-content;
   max-width: 14rem;
@@ -51,11 +83,28 @@
     width: 100vw;
     height: 100vh;
     overflow-y: auto;
-    display: none;
+    /* use visibility/opacity/transform so CSS animations work (avoid display:none) */
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
     backdrop-filter: blur(4px);
+    transition: backdrop-filter 0.25s ease;
+    will-change: opacity, transform;
 
     &.active {
-      display: inline-block;
+      /* let the keyframe drive visibility/opacity/transform */
+      pointer-events: auto;
+      animation: search-dropin 0.4s ease;
+      animation-fill-mode: forwards;
+      animation-delay: 0.2s;
+    }
+
+    &.closing {
+      animation: search-dropout 0.35s ease-out;
+      animation-fill-mode: forwards;
+      pointer-events: none;
     }
 
     & > .search-space {
