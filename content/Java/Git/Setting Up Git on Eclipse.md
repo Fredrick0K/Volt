@@ -1,0 +1,1 @@
+So in order to be able to push and save our [[Java]] projects on GitHub, open Eclipse
