@@ -1,6 +1,6 @@
 <p align="center">
   <a href="">
-    <img src="logo.png" />
+    <img src="ello.gif" />
   </a>
 </p>
 

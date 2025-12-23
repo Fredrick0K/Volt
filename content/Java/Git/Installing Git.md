@@ -8,3 +8,4 @@ The installation is pretty straight forward, "next -> next -> next -> Install".
 
 >[!Important]  The setup at some point will ask you if you want to use **Vim** as default editor or use **Visual Studio Code**. Choose the one you like. **Visual Studio** Code is recommended
 
+Lets continue on with [[Setting Up Git on Eclipse]].
