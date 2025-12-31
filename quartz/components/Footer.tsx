@@ -10,7 +10,7 @@ export default ((opts?: Options) => {
   const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
     const links = opts?.links ?? []
     const visitorBadgeUrl = opts?.githubRepo 
-      ? `https://api.countapi.xyz/hit/${opts.githubRepo}/visits`
+      ? `https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://${cfg.baseUrl}&count_bg=%2379C0FF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false`
       : null
 
     return (
@@ -23,31 +23,9 @@ export default ((opts?: Options) => {
           ))}
         </ul>
         {visitorBadgeUrl && (
-          <div class="visitor-counter" id="visitor-count">
-            <span>Visitors: </span>
-            <span id="count-value">Loading...</span>
+          <div class="visitor-counter">
+            <img src={visitorBadgeUrl} alt="visitor count" />
           </div>
-        )}
-        {visitorBadgeUrl && (
-          <script>
-            {`
-              fetch('${visitorBadgeUrl}')
-                .then(response => response.json())
-                .then(data => {
-                  const countElement = document.getElementById('count-value');
-                  if (countElement) {
-                    countElement.textContent = data.value || '0';
-                  }
-                })
-                .catch(error => {
-                  console.error('Error loading visitor count:', error);
-                  const countElement = document.getElementById('count-value');
-                  if (countElement) {
-                    countElement.textContent = 'N/A';
-                  }
-                });
-            `}
-          </script>
         )}
       </footer>
     )
