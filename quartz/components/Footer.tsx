@@ -3,12 +3,16 @@ import style from "./styles/footer.scss"
 
 interface Options {
   links: Record<string, string>
+  githubRepo?: string
 }
 
 export default ((opts?: Options) => {
   const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
-    const year = new Date().getFullYear()
     const links = opts?.links ?? []
+    const visitorBadgeUrl = opts?.githubRepo 
+      ? `https://visitor-badge.laobi.icu/?username=${opts.githubRepo.split('/')[0]}&repo=${opts.githubRepo.split('/')[1]}`
+      : null
+
     return (
       <footer class={`${displayClass ?? ""}`}>
         <ul>
@@ -18,6 +22,11 @@ export default ((opts?: Options) => {
             </li>
           ))}
         </ul>
+        {visitorBadgeUrl && (
+          <div class="visitor-counter">
+            <img src={visitorBadgeUrl} alt="visitor badge" />
+          </div>
+        )}
       </footer>
     )
   }

@@ -31,4 +31,20 @@ footer {
       }
     }
   }
+
+  & .visitor-counter {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(119, 205, 255, 0.2);
+    
+    img {
+      height: 20px;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
 }
