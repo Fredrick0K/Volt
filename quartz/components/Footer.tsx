@@ -6,15 +6,8 @@ interface Options {
 }
 
 export default ((opts?: Options) => {
-  const Footer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
+  const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
     const links = opts?.links ?? []
-
-    // Inject hit counter script
-    if (typeof document !== "undefined") {
-      const script = document.createElement("script")
-      script.innerHTML = `document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v="+Date.now()+"'><\\/script>");`
-      document.body.appendChild(script)
-    }
 
     return (
       <footer class={`${displayClass ?? ""}`}>
@@ -25,7 +18,6 @@ export default ((opts?: Options) => {
             </li>
           ))}
         </ul>
-        <a class="hitCounter" href="https://visitorshitcounter.com/" target="_blank" title="Hit counter" data-name="cd7a1edd5a19a1e489e1af4e5a0f7229|5|external|1|#0099cc|#f5f5f5|small|s-hit">Hit Counter</a>
       </footer>
     )
   }
