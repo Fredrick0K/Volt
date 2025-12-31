@@ -18,8 +18,8 @@ export default ((opts?: Options) => {
             </li>
           ))}
         </ul>
-        <a href="https://visitorbadge.io/status?path=https%3A%2F%2Ffredrick0k.github.io%2FobsdnVault%2F">
-          <img src="https://api.visitorbadge.io/api/daily?path=https%3A%2F%2Ffredrick0k.github.io%2FobsdnVault%2F&label=Visitors&countColor=%23263759&style=plastic&labelStyle=none" alt="Visitor count" />
+        <a href="https://github.com/Fredrick0K">
+          <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Ffredrick0k.github.io%2FobsdnVault%2F&label=Ye&countColor=%232ccaa1&style=flat-square" alt="Twn count" />
         </a>
       </footer>
     )
