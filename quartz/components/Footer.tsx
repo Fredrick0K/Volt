@@ -6,7 +6,7 @@ interface Options {
 }
 
 export default ((opts?: Options) => {
-  const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+  const Footer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
     const links = opts?.links ?? []
 
     return (
@@ -18,6 +18,9 @@ export default ((opts?: Options) => {
             </li>
           ))}
         </ul>
+        <a href="https://visitorbadge.io/status?path=https%3A%2F%2Ffredrick0k.github.io%2FobsdnVault%2F">
+          <img src="https://api.visitorbadge.io/api/daily?path=https%3A%2F%2Ffredrick0k.github.io%2FobsdnVault%2F&label=Visitors&countColor=%23263759&style=plastic&labelStyle=none" alt="Visitor count" />
+        </a>
       </footer>
     )
   }
