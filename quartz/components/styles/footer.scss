@@ -24,28 +24,10 @@ footer {
     li {
       font-size: 0.875rem;
       transition: font-size 0.3s ease;
-      animation: glow 1.5s ease-in-out infinite;
 
       &:hover {
         font-size: 1rem;
-      }
-    }
-  }
-
-  & .visitor-counter {
-    margin-top: 1.5rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(119, 205, 255, 0.2);
-    opacity: 1;
-    
-    img {
-      height: 20px;
-      opacity: 1;
-      transition: opacity 0.3s ease;
-
-      &:hover {
-        opacity: 0.6;
-        filter: brightness(1.2);
+        animation: glow 1.5s ease-in-out infinite;
       }
     }
   }
