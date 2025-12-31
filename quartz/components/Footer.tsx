@@ -24,7 +24,12 @@ export default ((opts?: Options) => {
         </ul>
         {visitorBadgeUrl && (
           <div class="visitor-counter">
-            <img src={visitorBadgeUrl} alt="visitor count" />
+            <img 
+              src={visitorBadgeUrl} 
+              alt="visitor count"
+              loading="lazy"
+              style="max-height: 20px;"
+            />
           </div>
         )}
       </footer>
