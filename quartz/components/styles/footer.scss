@@ -10,7 +10,6 @@
 footer {
   text-align: left;
   margin-bottom: 2rem;
-  opacity: 0.75;
 
   & ul {
     list-style: none;
@@ -20,14 +19,15 @@ footer {
     flex-direction: row;
     gap: 1rem;
     margin-top: -1rem;
-    //change text size on hover and adding transiction between size change
+    opacity: 0.75;
+    
     li {
       font-size: 0.875rem;
       transition: font-size 0.3s ease;
+      animation: glow 1.5s ease-in-out infinite;
 
       &:hover {
         font-size: 1rem;
-        animation: glow 1.5s ease-in-out infinite;
       }
     }
   }
@@ -36,14 +36,16 @@ footer {
     margin-top: 1.5rem;
     padding-top: 1rem;
     border-top: 1px solid rgba(119, 205, 255, 0.2);
+    opacity: 1;
     
     img {
       height: 20px;
-      opacity: 0.8;
+      opacity: 1;
       transition: opacity 0.3s ease;
 
       &:hover {
-        opacity: 1;
+        opacity: 0.6;
+        filter: brightness(1.2);
       }
     }
   }
