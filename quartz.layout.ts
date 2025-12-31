@@ -11,6 +11,7 @@ export const sharedPageComponents: SharedLayout = {
       "Quartz Project": "https://github.com/jackyzha0/quartz",
       "My GitHub":"https://github.com/Fredrick0K",
     },
+    githubRepo: "Fredrick0K/obsdnVault",
   }),
 }
 
