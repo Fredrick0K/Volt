@@ -10,7 +10,7 @@ export default ((opts?: Options) => {
   const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
     const links = opts?.links ?? []
     const visitorBadgeUrl = opts?.githubRepo 
-      ? `https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://${cfg.baseUrl}&count_bg=%2379C0FF&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false`
+      ? `https://visitor-badge.laobi.icu/?username=${opts.githubRepo.split('/')[0]}&repo=${opts.githubRepo.split('/')[1]}&label=visitors&style=flat&color=blue&textColor=white`
       : null
 
     return (
