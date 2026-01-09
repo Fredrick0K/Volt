@@ -49,9 +49,9 @@ function toggleFolder(evt: MouseEvent) {
   const folderContainer = (
     isSvg
       ? // svg -> div.folder-container
-        target.parentElement
+      target.parentElement
       : // button.folder-button -> div -> div.folder-container
-        target.parentElement?.parentElement
+      target.parentElement?.parentElement
   ) as MaybeHTMLElement
   if (!folderContainer) return
   const childFolderContainer = folderContainer.nextElementSibling as MaybeHTMLElement
@@ -86,7 +86,16 @@ function createFileNode(currentSlug: FullSlug, node: FileTrieNode): HTMLLIElemen
   const a = li.querySelector("a") as HTMLAnchorElement
   a.href = resolveRelative(currentSlug, node.slug)
   a.dataset.for = node.slug
-  a.textContent = node.displayName
+  a.innerHTML = `<span class="filename">${node.displayName}</span>`
+  if (node.data?.date) {
+    const date = new Date(node.data.date)
+    const dateStr = date.toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "2-digit",
+    })
+    a.innerHTML += `<span class="date">${dateStr}</span>`
+  }
 
   if (currentSlug === node.slug) {
     a.classList.add("active")
@@ -118,11 +127,29 @@ function createFolderNode(
     a.href = resolveRelative(currentSlug, folderPath)
     a.dataset.for = folderPath
     a.className = "folder-title"
-    a.textContent = node.displayName
+    a.innerHTML = `<span class="filename">${node.displayName}</span>`
+    if (node.data?.date) {
+      const date = new Date(node.data.date)
+      const dateStr = date.toLocaleDateString(undefined, {
+        year: "numeric",
+        month: "short",
+        day: "2-digit",
+      })
+      a.innerHTML += `<span class="date">${dateStr}</span>`
+    }
     button.replaceWith(a)
   } else {
     const span = titleContainer.querySelector(".folder-title") as HTMLElement
-    span.textContent = node.displayName
+    span.innerHTML = `<span class="filename">${node.displayName}</span>`
+    if (node.data?.date) {
+      const date = new Date(node.data.date)
+      const dateStr = date.toLocaleDateString(undefined, {
+        year: "numeric",
+        month: "short",
+        day: "2-digit",
+      })
+      span.innerHTML += `<span class="date">${dateStr}</span>`
+    }
   }
 
   // if the saved state is collapsed or the default state is collapsed
