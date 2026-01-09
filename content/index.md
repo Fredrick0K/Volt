@@ -14,7 +14,7 @@ Here you will find SGE stuff such as:
 - ...
 ## [[Java]]
 Here is where you will find Java things. *Its being builded yet.*
-- [[Hibernate]]
+- [[Hibernate Configuration]]
 - [[MySQL]]
 - [[Java Code|Code]]
 - ...

@@ -3,7 +3,7 @@
 >[!example] **HQL** example: 
 >> SELECT **pe** FROM **Pelicula** **pe** 
 
-Here **pe** is just and alias that references to **Pelicula** which is the Class that **Hibernate** generated when we did the [[Hibernate#Third Class| Mapping]]. In SQL looks like this:
+Here **pe** is just and alias that references to **Pelicula** which is the Class that **Hibernate** generated when we did the [[Hibernate Configuration#Third Class| Mapping]]. In SQL looks like this:
 
 >[!example] SQL example:
 >> SELECT * FROM Pelicula

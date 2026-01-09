@@ -108,6 +108,4 @@ Good, we are at one small thing to finish the process, we go to the **Exporters*
 - **Hibernate XML Configuration**
 ![[Pasted image 20251112172738.png]]
 
-Aight! Everything now is done! 
-
->[!Yes] Congrats!
+>[!Success] WE DONE!
