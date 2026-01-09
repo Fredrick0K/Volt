@@ -1,12 +1,12 @@
 @use "../../styles/variables.scss" as *;
 
 .graph {
-  & > h3 {
+  &>h3 {
     font-size: 1rem;
     margin: 0;
   }
 
-  & > .graph-outer {
+  &>.graph-outer {
     border-radius: 5px;
     border: 1px solid var(--lightgray);
     border-color: #7b97aa;
@@ -16,12 +16,12 @@
     position: relative;
     overflow: hidden;
 
-    & > .global-graph-icon {
+    &>.global-graph-icon {
       cursor: pointer;
       background: none;
       border: 1px solid #7b97aa;
-      color: var(--dark);
-      opacity: 0.5;
+      color: #e9e9e9;
+      opacity: 0.9;
       width: 24px;
       height: 24px;
       position: absolute;
@@ -33,13 +33,14 @@
       background-color: transparent;
       transition: background-color 0.5s ease;
       cursor: pointer;
+
       &:hover {
         background-color: var(--lightgray);
       }
     }
   }
 
-  & > .global-graph-outer {
+  &>.global-graph-outer {
     position: fixed;
     z-index: 9999;
     left: 0;
@@ -47,29 +48,41 @@
     width: 100vw;
     height: 100%;
     backdrop-filter: blur(4px);
-    display: none;
-    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, backdrop-filter 0.3s ease;
+    pointer-events: none;
 
     &.active {
-      display: inline-block;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+
+      &>.global-graph-container {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
     }
 
-    & > .global-graph-container {
-      border: 1px solid var(--lightgray);
-      background-color: var(--light);
-      border-radius: 5px;
+    &>.global-graph-container {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background-color: color-mix(in srgb, var(--light), transparent 50%);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      border-radius: 15px;
       box-sizing: border-box;
       position: fixed;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%) scale(0.95);
+      opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
       height: 80vh;
       width: 80vw;
 
       @media all and not ($desktop) {
         width: 90%;
       }
-
     }
   }
 }

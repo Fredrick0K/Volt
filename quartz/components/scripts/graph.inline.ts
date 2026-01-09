@@ -161,6 +161,8 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       })),
   }
 
+
+
   const width = graph.offsetWidth
   const height = Math.max(graph.offsetHeight, 250)
 

@@ -1,8 +1,14 @@
 @use "./base.scss";
 
 // put your custom CSS here!
-body {
-    background: linear-gradient(to top left, #040450, #000000);
+:root[saved-theme="dark"] body {
+    background: linear-gradient(to top left, #05053b, #000000);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+:root[saved-theme="light"] body {
+    background: linear-gradient(to top left, #e0f7fa, #ffffff);
     background-attachment: fixed;
     min-height: 100vh;
 }
