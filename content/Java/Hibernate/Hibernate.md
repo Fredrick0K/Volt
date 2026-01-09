@@ -1,7 +1,4 @@
 > [!danger] Before Starting with this process, ENSURE that anything was constructed by **Build Path**, check **Referenced libraries** and ENSURE that its empty or doesn't exist. Then you can proceed.
-
-> [!CAUTION] Check it twice, a single library added to the **Build Path** could brake your Hibernate Configuration process.  
-
 ---
 
 So, we got Hibernate installed in the eclipse IDE.
