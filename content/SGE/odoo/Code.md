@@ -12,7 +12,7 @@ This page holds all the code used in [[SGE/odoo/odoo/Odoo|Odoo]], if anyone want
 ---
 
 #  QWEB
-```
+``` html 
 <t t-name="informe_alumno">
     <div class="page">
         <p><h1>Informe Del Alumno</h1></p>
@@ -35,7 +35,7 @@ This page holds all the code used in [[SGE/odoo/odoo/Odoo|Odoo]], if anyone want
     </div>
 ```
 
-```
+```html
 <t t-name="informe_libro">
 	<style>
 		table, th, td {
@@ -69,7 +69,7 @@ This page holds all the code used in [[SGE/odoo/odoo/Odoo|Odoo]], if anyone want
 ___ 
 # Tree 
 
-````
+```` xml
 <tree>
     <field name="x_codigo_libro"/>
     <field name="x_codigo_autor"/>
@@ -82,7 +82,7 @@ ___
 ___
 # Form 
 
-````
+````xml
 <form>
     <group>
         <field name="x_codigo_libro"/>
@@ -97,7 +97,7 @@ ___
 ___
 # Custom Addons Models: 
 
-````
+``` python
 from odoo import models, fields, api
 class ies(models.Model):
      _name = 'ies.curso'
@@ -127,7 +127,7 @@ class ies(models.Model):
 ___
 # Code Custom Views
 
-```
+``` xml
 <odoo>
   <data>
     <!-- explicit list view definition -->
@@ -253,9 +253,9 @@ ___
 ```
 
 ___
-# Security CSV
+# Security CSV 
 
-```
+``` csv
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 perm,Permissions,model_xwd_curso,,1,1,1,1
 permTurbo,TPermissions,model_xwd_turbo,,1,1,1,1
@@ -264,8 +264,7 @@ permTurbo,TPermissions,model_xwd_turbo,,1,1,1,1
 ___
 # Custom Demo Data
 
-```
-
+``` xml
 <odoo>
   <data>
     <!-- Demo Data Load For Alumno-->
@@ -348,6 +347,4 @@ ___
     </record>
   </data>
 </odoo>
-
 ```
-

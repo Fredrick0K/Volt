@@ -9,13 +9,14 @@ title: Home
 
 ## [[Custom Modules|SGE]] 
 Here you will find SGE stuff such as:
-- [[SGE/odoo/Odoo/Code|Code]]
+- [[Code|Code]]
 - [[models, views n actions|Models]]
 - ...
 ## [[Java]]
 Here is where you will find Java things. *Its being builded yet.*
 - [[Hibernate]]
 - [[MySQL]]
+- [[Java Code|Code]]
 - ...
 ## [[Binary Flow | PSP]]
 *PSP is not updated yet.*

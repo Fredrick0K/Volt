@@ -31,7 +31,7 @@ There are  2 types, **Implicit JOIN** and **Explicit JOIN**. The implicit Join u
 - Explicit example: ``SELECT l FROM Libro l JOIN l.escritor e WHERE e.nombre LIKE '{value}' ``. Here same thing but with the well know Join statement.
 
 
->[!Important] If your program does multiple queries to the DB, the **Session** need to be closed ones the program finishes.
+>[!Important] If your program does multiple queries to the DB, the **Session** need to be closed ones the program finishes. [[Java Code#Closing Sessions.|Here you will find an example!]]
 
 
 
