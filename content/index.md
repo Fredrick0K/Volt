@@ -38,4 +38,4 @@ Here is where you will find Java things. *Its being builded yet.*
 
 
 
-%% this page, campusdigital fp zaragoza got some Mid tier ahh courses to spetialize JAVA + ANT %%
+%% this page, campusdigital fp zaragoza got some Mid tier ahh courses to spetialize%%
