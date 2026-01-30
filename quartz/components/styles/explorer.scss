@@ -13,15 +13,6 @@
       transition: transform 300ms ease-in-out;
     }
 
-    // Sticky top bar (stays in place when scrolling down on mobile).
-    .sidebar.left:has(.explorer) {
-      box-sizing: border-box;
-      position: sticky;
-      background-color: var(--light);
-      padding: 1rem 0 1rem 0;
-      margin: 0;
-    }
-
     .hide-until-loaded~.explorer-content {
       display: none;
     }
@@ -50,32 +41,12 @@
     opacity: 0.8;
   }
 
-  @media all and ($mobile) {
-    order: -1;
-    height: initial;
-    overflow: hidden;
-    flex-shrink: 0;
-    align-self: flex-start;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
   button.mobile-explorer {
     display: none;
   }
 
   button.desktop-explorer {
     display: flex;
-  }
-
-  @media all and ($mobile) {
-    button.mobile-explorer {
-      display: flex;
-    }
-
-    button.desktop-explorer {
-      display: none;
-    }
   }
 
   &.desktop-only {
@@ -225,8 +196,25 @@ li:has(> .folder-outer:not(.open))>.folder-container>svg {
 
 .explorer {
   @media all and ($mobile) {
+    order: -1;
+    height: initial;
+    flex-shrink: 0;
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: auto;
+    margin-right: 0.5rem;
+
+    button.desktop-explorer {
+      display: none;
+    }
+
+    button.mobile-explorer {
+      display: flex;
+    }
+
     &.collapsed {
-      flex: 0 0 34px;
+      flex: 0 0 auto;
 
       &>.explorer-content {
         transform: translateX(-100vw);
@@ -235,18 +223,54 @@ li:has(> .folder-outer:not(.open))>.folder-container>svg {
     }
 
     &:not(.collapsed) {
-      flex: 0 0 34px;
+      flex: 0 0 auto;
 
       &>.explorer-content {
         transform: translateX(0);
         visibility: visible;
+      }
+
+      // Move button to bottom when open
+      & .mobile-explorer {
+        position: fixed;
+        top: auto;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 4px 20px rgba(19, 12, 61, 0.2);
+        background-color: var(--tertiary); // Use theme color for active state
+        color: var(--light);
+        z-index: 102; // Ensure it's above everything
+
+        animation: button-enter 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+
+        @keyframes button-enter {
+          0% {
+            transform: translate(-50%, 20px) scale(0.8);
+            opacity: 0;
+          }
+
+          50% {
+            transform: translate(-50%, -10px) scale(1.1);
+            opacity: 1;
+          }
+
+          100% {
+            transform: translate(-50%, 0) scale(1);
+            opacity: 1;
+          }
+        }
+
+        .lucide-menu {
+          stroke: var(--light);
+        }
       }
     }
 
     .explorer-content {
       box-sizing: border-box;
       z-index: 100;
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       margin-top: 0;
@@ -257,17 +281,38 @@ li:has(> .folder-outer:not(.open))>.folder-container>svg {
       transition:
         transform 200ms ease,
         visibility 200ms ease;
-      overflow: hidden;
-      padding: 4rem 0 2rem 0;
+      overflow-y: auto; // Allow scrolling
+      padding: 2rem 1rem 6rem 1rem; // Less top padding, more bottom padding for button
       height: 100dvh;
       max-height: 100dvh;
       visibility: hidden;
+      overscroll-behavior: contain;
     }
 
     .mobile-explorer {
+      position: relative;
       margin: 0;
-      padding: 5px;
+      padding: 8px;
       z-index: 101;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 40px;
+      min-height: 40px;
+      background-color: var(--light);
+      border-radius: 4px;
+      box-shadow: none;
+      transition: box-shadow 0.2s ease;
+
+      &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      svg {
+        flex-shrink: 0;
+        width: 24px;
+        height: 24px;
+      }
 
       .lucide-menu {
         stroke: var(--darkgray);
@@ -292,6 +337,12 @@ li:has(> .folder-outer:not(.open))>.folder-container>svg {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+
+    @media all and ($mobile) {
+      white-space: normal;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
   }
 
   .date {
@@ -301,6 +352,11 @@ li:has(> .folder-outer:not(.open))>.folder-container>svg {
     flex-shrink: 0;
     font-weight: normal;
     font-family: var(--codeFont);
+
+    // Only hide on very small mobile screens (small phones in portrait, < 360px)
+    @media (max-width: 360px) {
+      display: none;
+    }
   }
 }
 

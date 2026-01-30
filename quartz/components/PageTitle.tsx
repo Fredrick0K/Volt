@@ -25,11 +25,26 @@ PageTitle.css = `
   align-items: center;
 }
 
+@media all and (max-width: 768px) {
+  .page-title {
+    flex: 1;
+    min-width: 0;
+    justify-content: flex-start;
+    margin-left: 0.5rem;
+  }
+}
+
 .page-title img {
   max-width: 100%;
   height: auto;
   transition: transform 0.3s ease, filter 0.3s ease;
   cursor: pointer;
+}
+
+@media all and (max-width: 768px) {
+  .page-title img {
+    max-width: 150px;
+  }
 }
 
 .page-title img:hover {
