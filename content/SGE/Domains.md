@@ -26,13 +26,15 @@ In the 90's:
 - **ERP** (Enterprise Resource Planning)
 
 ## In the future, new models of Business like:
-• **e-commerce** (B2C, B2B…): distribución, venta, compra, marketing y
+**e-commerce** (B2C, B2B…): distribución, venta, compra, marketing y
 	suministro de información de productos o servicios a través de
 	Internet.
-• **m-commerce**: se trata de comercio electrónico usando el teléfono
+
+ **m-commerce**: se trata de comercio electrónico usando el teléfono
 	móvil, ya sea mediante un navegador o una aplicación como medio
 	para la compra.
-• **s-commerce**: social commerce o comercio social es una de las
+
+ **s-commerce**: social commerce o comercio social es una de las
 	mayores tendencias de comercio electrónico, y consiste en el uso de
 	las redes sociales como canales de venta de productos
 
