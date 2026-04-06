@@ -1,4 +1,3 @@
-### Vault repo.
 Made by Quartz
 <p align="center">
   <a href="">
