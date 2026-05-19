@@ -1,4 +1,4 @@
-Made by Quartz
+Made with Quartz
 <p align="center">
   <a href="">
     <img src="quartz/static/icon.png" />
