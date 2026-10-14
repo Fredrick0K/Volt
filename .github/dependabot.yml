@@ -4,6 +4,9 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    ignore:
+      - dependency-name: "js-yaml"
+        versions: [">=5.0.0"]
     groups:
       production-dependencies:
         applies-to: "version-updates"
