@@ -1,6 +1,6 @@
 Made with Quartz
 <p align="center">
   <a href="">
-    <img src="quartz/static/icon.png" style="filter: invert(80%)"/>
+    <img class ="hirsch" src="quartz/static/icon.png">
   </a>
 </p>
